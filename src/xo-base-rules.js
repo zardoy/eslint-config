@@ -1,8 +1,6 @@
 //@ts-check
 
 module.exports = {
-    'no-use-extend-native/no-use-extend-native': 'error',
-
     // TODO: Restore when it becomes safer: https://github.com/sindresorhus/eslint-plugin-unicorn/issues/681
     // 'unicorn/string-content': [
     // 	'error',
@@ -53,42 +51,40 @@ module.exports = {
     'promise/no-return-in-finally': 'error',
     'promise/valid-params': 'error',
     'promise/prefer-await-to-then': 'error',
-    'import/default': 'error',
-    'import/export': 'error',
-    'import/extensions': [
-        'error',
-        'always',
-        {
-            ignorePackages: true,
-            // TypeScript doesn't yet support using extensions and fails with error TS2691.
-            pattern: {
-                ts: 'never',
-                tsx: 'never',
-            },
-        },
-    ],
+    // 'import/default': 'error',
+    // 'import/export': 'error',
+    // 'import/extensions': [
+    //     'error',
+    //     'always',
+    //     {
+    //         ignorePackages: true,
+    //         // TypeScript doesn't yet support using extensions and fails with error TS2691.
+    //         pattern: {
+    //             ts: 'never',
+    //             tsx: 'never',
+    //         },
+    //     },
+    // ],
     'import/first': 'error',
 
     // Enabled, but disabled on TypeScript (https://github.com/xojs/xo/issues/576)
-    'import/named': 'error',
+    // 'import/named': 'error',
 
-    'import/namespace': [
-        'error',
-        {
-            allowComputed: true,
-        },
-    ],
+    // 'import/namespace': [
+    //     'error',
+    //     {
+    //         allowComputed: true,
+    //     },
+    // ],
     'import/no-absolute-path': 'error',
-    'import/no-anonymous-default-export': 'error',
-    'import/no-named-default': 'error',
-    'import/no-webpack-loader-syntax': 'error',
+    // 'import/no-named-default': 'error',
     'import/no-self-import': 'error',
-    'import/no-cycle': [
-        'error',
-        {
-            ignoreExternal: true,
-        },
-    ],
+    // 'import/no-cycle': [
+    //     'error',
+    //     {
+    //         ignoreExternal: true,
+    //     },
+    // ],
     'import/no-useless-path-segments': 'error',
     'import/newline-after-import': 'error',
     'import/no-amd': 'error',
@@ -96,15 +92,17 @@ module.exports = {
 
     'import/no-extraneous-dependencies': 'error',
     'import/no-mutable-exports': 'error',
+    // TODO check
     'import/no-named-as-default-member': 'error',
     'import/no-named-as-default': 'error',
     'import/order': 'error',
-    'import/no-unassigned-import': [
-        'error',
-        {
-            allow: ['@babel/polyfill', '**/register', '**/register.*', '**/register/**', '**/register/**.*', '**/*.css', '**/*.scss', '**/*.sass', '**/*.less'],
-        },
-    ],
+    // TODO where it can be useful
+    // 'import/no-unassigned-import': [
+    //     'error',
+    //     {
+    //         allow: ['@babel/polyfill', '**/register', '**/register.*', '**/register/**', '**/register/**.*', '**/*.css', '**/*.scss', '**/*.sass', '**/*.less'],
+    //     },
+    // ],
     'node/no-unpublished-bin': 'error',
 
     // We have this enabled in addition to `import/extensions` as this one has an auto-fix.
