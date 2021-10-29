@@ -113,5 +113,7 @@ module.exports = {
         '@typescript-eslint/consistent-indexed-object-style': 'off',
         '@typescript-eslint/consistent-type-assertions': 'off',
         'no-warning-comments': 'off',
+        // dimmed color for vars from IDE is enough + reports unused in function types for args
+        'no-unused-vars': 'off',
     },
 }
