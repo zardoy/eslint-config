@@ -1,4 +1,4 @@
-const config = require('./config')
+const { config, reactConfig } = require('./config')
 const pluginsList = require('./pluginsList')
 
 // console.time('parse')
@@ -17,6 +17,7 @@ for (const plugin of pluginsList) {
 module.exports = {
     configs: {
         recommended: config,
+        react: reactConfig,
         // react: config,
     },
     rules: allPluginsRules,

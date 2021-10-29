@@ -27,7 +27,7 @@ module.exports = {
         'prefer-template': 'error',
         'import/no-anonymous-default-export': 'off',
         // TODO error on stable. Warn on PRs
-        '@typescript-eslint/no-unsafe-assignment': 'warn',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
         '@typescript-eslint/no-unsafe-argument': 'off',
         // TODO enable once Error type in catch clauses
         '@typescript-eslint/no-unsafe-call': 'off',
@@ -115,5 +115,16 @@ module.exports = {
         'no-warning-comments': 'off',
         // dimmed color for vars from IDE is enough + reports unused in function types for args
         'no-unused-vars': 'off',
+        // TODO disable import/* rules. this one is lagging
+        'import/newline-after-import': 'off',
+        'new-cap': [
+            'error',
+            {
+                newIsCapExceptions: ['fdir'],
+                capIsNewExceptions: ['Debug'], //@prisma/debug
+            },
+        ],
+        // investigate why it was created
+        'node/file-extension-in-import': 'off',
     },
 }

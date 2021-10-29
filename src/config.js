@@ -2,6 +2,7 @@
 
 const myRules = require('./myConfigs/index').rules
 const xoBaseRules = require('./xo-base-rules')
+const reactRules = require('./myConfigs/react').rules
 
 // const tsParser = require('@typescript-eslint/parser')
 
@@ -9,7 +10,14 @@ const plugins = require('./pluginsList')
 
 // const normalizeRules = obj => {
 //     return Object.fromEntries(
-//         Object.entries(obj.map([ruleName]))
+//         Object.entries(
+//             obj.map(([ruleName, value]) => {
+//                 for (const { rulePrefix } of plugins) {
+//                     if (ruleName.startsWith(rulePrefix)) return [`zardoy-config/${ruleName}`, value]
+//                 }
+//                 return [ruleName, value]
+//             }),
+//         ),
 //     )
 // }
 
@@ -59,4 +67,13 @@ const config = {
     rules,
 }
 
-module.exports = config
+const reactConfig = {
+    ...config,
+    rules: {
+        ...require('eslint-config-xo-react').rules,
+        ...config.rules,
+        ...reactRules,
+    },
+}
+
+module.exports = { config, reactConfig }
