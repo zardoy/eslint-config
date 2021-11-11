@@ -46,6 +46,8 @@ const rules = Object.fromEntries(
 
 /** @type{import('eslint').Linter.Config} */
 const config = {
+    // I primarily use TypeScript so js files are generated ones (or .mjs, .cjs)
+    ignorePatterns: ["*.js"],
     root: true,
     parser: '@typescript-eslint/parser',
     env: { es2021: true, node: true },

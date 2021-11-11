@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-zardoy-config",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "main": "src/plugin.js",
     "repository": "https://github.com/zardoy/eslint-config.git",
     "author": "Vitaly Turovsky <vital2580@icloud.com>",

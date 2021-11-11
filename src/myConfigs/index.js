@@ -1,4 +1,4 @@
-module.exports = {
+const rulesObj = {
     rules: {
         // https://github.com/prettier/prettier/issues/3806
         'operator-linebreak': 'off',
@@ -11,8 +11,14 @@ module.exports = {
         '@typescript-eslint/quotes': 'off',
         quotes: 'off',
 
+        // TS already handles them
+        'no-import-assign': 'off',
+        // '@typescript-eslint/no-require-imports': 'off',
+
         '@typescript-eslint/object-curly-spacing': 'off',
 
+        // NOT CONFIGURABLE! How to make //@ts-ignore work?
+        'spaced-comment': 'off',
         // TODO review
         // find it useless doesn't allow writing return next() in middlewares
         '@typescript-eslint/no-confusing-void-expression': 'off',
@@ -128,3 +134,7 @@ module.exports = {
         'node/file-extension-in-import': 'off',
     },
 }
+
+rulesObj.rules = rules
+
+module.exports = rulesObj
