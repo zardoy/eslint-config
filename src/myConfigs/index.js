@@ -135,6 +135,4 @@ const rulesObj = {
     },
 }
 
-rulesObj.rules = rules
-
 module.exports = rulesObj
