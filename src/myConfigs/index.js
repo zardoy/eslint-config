@@ -73,11 +73,13 @@ const rulesObj = {
         // TODO investigate
         '@typescript-eslint/prefer-readonly': 'warn',
         '@typescript-eslint/no-empty-function': 'warn',
-        '@typescript-eslint/no-unused-vars': 'warn',
+        '@typescript-eslint/no-unused-vars': 'off',
         // a commong style
         // '@typescript-eslint/object-curly-spacing': ['error', 'always'],
-        // TODO disable completely. I really know where and when to use null
-        'unicorn/no-null': 'warn',
+        // Unfortunately this rule is too annoying. I always know where to use process.exit
+        'unicorn/no-process-exit': 'off',
+        // After some time I realized this rule is simply stupid
+        'unicorn/no-null': 'off',
         'unicorn/custom-error-definition': 'error',
         'unicorn/consistent-destructuring': 'warn',
         'unicorn/empty-brace-spaces': 'off',
