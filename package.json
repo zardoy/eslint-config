@@ -1,7 +1,7 @@
 {
-    "name": "eslint-plugin-zardoy-config",
-    "version": "0.1.2",
-    "main": "src/plugin.js",
+    "name": "eslint-config-zardoy",
+    "version": "0.0.0-dev",
+    "main": "src/index.js",
     "repository": "https://github.com/zardoy/eslint-config.git",
     "author": "Vitaly Turovsky <vital2580@icloud.com>",
     "license": "MIT",
@@ -9,25 +9,37 @@
         "src"
     ],
     "devDependencies": {
-        "@types/node": "^16.10.3",
-        "eslint": "^7.32.0"
-    },
-    "peerDependencies": {
-        "eslint": "^7.32.0"
-    },
-    "dependencies": {
-        "@typescript-eslint/eslint-plugin": "^4.33.0",
-        "@typescript-eslint/parser": "^4.32.0",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-config-xo": "^0.38.0",
-        "eslint-config-xo-react": "^0.25.0",
-        "eslint-config-xo-typescript": "^0.44.0",
-        "eslint-plugin-eslint-comments": "^3.2.0",
-        "eslint-plugin-import": "^2.24.2",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-promise": "^5.1.0",
+        "@types/node": "^16.11.10",
+        "eslint": "^8.3.0",
         "eslint-plugin-react": "^7.27.1",
         "eslint-plugin-react-hooks": "^4.3.0",
-        "eslint-plugin-unicorn": "^36.0.0"
+        "typescript": "^4.5.2"
+    },
+    "peerDependencies": {
+        "eslint": "^7.32.0",
+        "eslint-plugin-react": "^7.27.1",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "typescript": "^4.5.2"
+    },
+    "peerDependenciesMeta": {
+        "eslint-plugin-react": {
+            "optional": true
+        },
+        "eslint-plugin-react-hooks": {
+            "optional": true
+        }
+    },
+    "dependencies": {
+        "@rushstack/eslint-patch": "^1.1.0",
+        "@typescript-eslint/eslint-plugin": "^5.4.0",
+        "@typescript-eslint/parser": "^5.4.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-xo": "^0.39.0",
+        "eslint-config-xo-react": "^0.25.0",
+        "eslint-config-xo-typescript": "^0.47.1",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-unicorn": "^39.0.0"
     }
 }

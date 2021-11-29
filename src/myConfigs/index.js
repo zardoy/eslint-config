@@ -72,7 +72,7 @@ const rulesObj = {
         '@typescript-eslint/triple-slash-reference': 'off',
         // TODO investigate
         '@typescript-eslint/prefer-readonly': 'warn',
-        '@typescript-eslint/no-empty-function': 'warn',
+        '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
         // a commong style
         // '@typescript-eslint/object-curly-spacing': ['error', 'always'],
@@ -134,6 +134,7 @@ const rulesObj = {
         ],
         // investigate why it was created
         'node/file-extension-in-import': 'off',
+        'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.ts', '**/*.spec.ts', '!**/src/**/*.ts'] }],
     },
 }
 
