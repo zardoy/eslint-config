@@ -1,4 +1,6 @@
-const conifg = require('./src/index')
+const conifg = require('./src/config')
+
+// TODO turn into notebook
 
 // For local testing. list override rules of plugin
 
