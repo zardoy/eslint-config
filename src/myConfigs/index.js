@@ -135,6 +135,40 @@ const rulesObj = {
         // investigate why it was created
         'node/file-extension-in-import': 'off',
         'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.ts', '**/*.spec.ts', '!**/src/**/*.ts'] }],
+
+        'sonarjs/no-all-duplicated-branches': 'error',
+        'sonarjs/no-element-overwrite': 'error',
+        'sonarjs/no-empty-collection': 'error',
+        'sonarjs/no-identical-conditions': 'error',
+        'sonarjs/no-ignored-return': 'error',
+        // disable?
+        'sonarjs/no-one-iteration-loop': 'warn',
+        // never used btw
+        'sonarjs/non-existent-operator': 'error',
+        // already got no-lonely-if from unicorn
+        // 'sonarjs/no-collapsible-if': 'error',
+        'sonarjs/no-duplicate-string': 'error',
+        'sonarjs/no-duplicated-branches': 'error',
+        'sonarjs/no-gratuitous-expressions': 'error',
+        'sonarjs/no-identical-functions': 'error',
+        'sonarjs/no-inverted-boolean-check': 'error',
+        'sonarjs/no-nested-switch': 'error',
+        // TODO enable back!
+        // 'sonarjs/no-nested-template-literals': 'error',
+        // TODO! make fixable!
+        'sonarjs/no-redundant-boolean': 'error',
+        // 'sonarjs/no-redundant-jump' already got no-useless-return
+        'sonarjs/no-redundant-boolean': 'error',
+        // TODO no-small-switch enable only when fixable
+        'sonarjs/no-redundant-boolean': 'error',
+        'sonarjs/no-unused-collection': 'error',
+        // TODO make error when fixable
+        'sonarjs/prefer-object-literal': 'warn',
+        'sonarjs/prefer-single-boolean-return': 'error',
+        'sonarjs/prefer-while': 'error',
+        // cognitive-complexity. we already have complexity?
+        // maybe make sense? elseif-without-else
+        // no-collection-size-mischeck we already got rule from unicorn
     },
 }
 

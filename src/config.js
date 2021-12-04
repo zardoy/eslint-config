@@ -25,7 +25,7 @@ const config = {
     // I primarily use TypeScript (or .mjs, .cjs). For me, .js files are generated ones
     ignorePatterns: ['*.js'],
     root: true,
-    plugins: ['@typescript-eslint', 'unicorn', 'eslint-comments', 'import', 'node'],
+    plugins: ['@typescript-eslint', 'unicorn', 'eslint-comments', 'import', 'node', 'sonarjs'],
     extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
     parser: '@typescript-eslint/parser',
     env: { es2021: true, node: true },
