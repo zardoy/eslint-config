@@ -134,7 +134,7 @@ const rulesObj = {
         ],
         // investigate why it was created
         'node/file-extension-in-import': 'off',
-        'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.ts', '**/*.spec.ts', '!**/src/**/*.ts'] }],
+        'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.ts', '**/*.spec.ts', '**/*.e2e.ts', '!**/src/**/*.ts'] }],
 
         'sonarjs/no-all-duplicated-branches': 'error',
         'sonarjs/no-element-overwrite': 'error',
