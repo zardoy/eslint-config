@@ -171,47 +171,45 @@ const rulesObj = {
         // no-collection-size-mischeck we already got rule from unicorn
         '@typescript-eslint/naming-convention': [
             'error',
-            [
-                {
-                    selector: [
-                        'variable',
-                        'function',
-                        'classProperty',
-                        'objectLiteralProperty',
-                        'parameterProperty',
-                        'classMethod',
-                        'objectLiteralMethod',
-                        'typeMethod',
-                        'accessor',
-                    ],
-                    format: ['strictCamelCase', 'UPPER_CASE'],
-                    leadingUnderscore: 'allowSingleOrDouble',
-                    trailingUnderscore: 'allow',
-                    filter: { regex: '[- ]', match: false },
-                },
-                { selector: 'typeLike', format: ['StrictPascalCase'] },
-                {
-                    selector: 'variable',
-                    types: ['boolean'],
-                    format: ['StrictPascalCase'],
-                    prefix: ['is', 'has', 'can', 'should', 'will', 'did'],
-                },
-                {
-                    selector: 'interface',
-                    filter: '^(?!I)[A-Z]',
-                    format: ['StrictPascalCase'],
-                },
-                {
-                    selector: 'typeParameter',
-                    filter: '^T$|^[A-Z][a-zA-Z]+$',
-                    format: ['StrictPascalCase'],
-                },
-                {
-                    selector: ['classProperty', 'objectLiteralProperty'],
-                    format: null,
-                    modifiers: ['requiresQuotes'],
-                },
-            ],
+            {
+                selector: [
+                    'variable',
+                    'function',
+                    'classProperty',
+                    'objectLiteralProperty',
+                    'parameterProperty',
+                    'classMethod',
+                    'objectLiteralMethod',
+                    'typeMethod',
+                    'accessor',
+                ],
+                format: ['strictCamelCase', 'UPPER_CASE', 'StrictPascalCase'],
+                leadingUnderscore: 'allowSingleOrDouble',
+                trailingUnderscore: 'allow',
+                filter: { regex: '[- ]', match: false },
+            },
+            { selector: 'typeLike', format: ['StrictPascalCase'] },
+            {
+                selector: 'variable',
+                types: ['boolean'],
+                format: ['StrictPascalCase'],
+                prefix: ['is', 'has', 'can', 'should', 'will', 'did'],
+            },
+            {
+                selector: 'interface',
+                filter: '^(?!I)[A-Z]',
+                format: ['StrictPascalCase'],
+            },
+            {
+                selector: 'typeParameter',
+                filter: '^T$|^[A-Z][a-zA-Z]+$',
+                format: ['StrictPascalCase'],
+            },
+            {
+                selector: ['classProperty', 'objectLiteralProperty'],
+                format: null,
+                modifiers: ['requiresQuotes'],
+            },
         ],
     },
 }
