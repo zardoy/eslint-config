@@ -98,10 +98,12 @@ const rulesObj = {
             'error',
             {
                 styles: {
-                    fs: {
-                        default: true,
-                    },
+                    // fs: {
+                    //     default: true,
+                    //     namespace: true,
+                    // },
                     vscode: {
+                        namespace: true,
                         default: true,
                     },
                 },
