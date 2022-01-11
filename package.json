@@ -6,7 +6,8 @@
     "author": "Vitaly Turovsky <vital2580@icloud.com>",
     "license": "MIT",
     "files": [
-        "src"
+        "src",
+        "react.js"
     ],
     "devDependencies": {
         "@types/node": "^16.11.14",
