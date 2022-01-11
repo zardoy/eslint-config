@@ -23,7 +23,7 @@ const rulesObj = {
         // find it useless doesn't allow writing return next() in middlewares
         '@typescript-eslint/no-confusing-void-expression': 'off',
 
-        'semi-style': ['error', 'first'],
+        'semi-style': 'off',
         curly: ['error', 'multi', 'consistent'],
         // it's just not convenient. I got used to it
         'capitalized-comments': 'off',
