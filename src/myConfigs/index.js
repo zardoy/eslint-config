@@ -215,7 +215,8 @@ const rulesObj = {
         ],
         // TODO allow String for it
         'unicorn/no-array-callback-reference': 'off', // we love concise code
-        'no-labels': 'off'
+        'no-labels': 'off',
+        'unicorn/catch-error-name': 'off',
     },
 }
 
