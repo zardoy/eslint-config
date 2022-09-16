@@ -217,6 +217,8 @@ const rulesObj = {
         'unicorn/no-array-callback-reference': 'off', // we love concise code
         'no-labels': 'off',
         'unicorn/catch-error-name': 'off',
+        '@typescript-eslint/space-before-function-paren': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
     },
 }
 
