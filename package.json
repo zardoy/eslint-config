@@ -20,19 +20,11 @@
     },
     "peerDependencies": {
         "eslint": "^8.5.0",
-        "eslint-plugin-react": "^7.27.1",
-        "eslint-plugin-react-hooks": "^4.3.0",
         "eslint-plugin-vue": "^8.4.1",
         "typescript": "^4.5.2",
         "vue-eslint-parser": "^8.2.0"
     },
     "peerDependenciesMeta": {
-        "eslint-plugin-react": {
-            "optional": true
-        },
-        "eslint-plugin-react-hooks": {
-            "optional": true
-        },
         "eslint-plugin-vue": {
             "optional": true
         },
