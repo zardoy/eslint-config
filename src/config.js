@@ -11,6 +11,9 @@ const rules = {
     ...xoBaseRules,
     ...myRules,
 }
+
+rules['no-restricted-globals'] = [...rules['no-restricted-globals'], 'name', 'close', 'self']
+
 // const overrides = {
 //     ...require('eslint-config-xo-typescript').overrides,
 // }
