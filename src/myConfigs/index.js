@@ -24,7 +24,7 @@ const rulesObj = {
         '@typescript-eslint/no-confusing-void-expression': 'off',
 
         'semi-style': 'off',
-        curly: ['error', 'multi', 'consistent'],
+        curly: ['error', 'multi-line', 'consistent'],
         // it's just not convenient. I got used to it
         'capitalized-comments': 'off',
         'no-unused-vars': 'warn',
